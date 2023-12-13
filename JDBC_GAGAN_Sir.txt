@@ -1,0 +1,636 @@
+J2EE: -
+----------
+J2EE Stands for Java Enterprice Edition 2 refers to the version
+It contains larger set of libraries compared to Java Standard Edition ( J2SE )
+ 
+Objective of J2EE:
+It is needed for the Simplification of Web Application Development.
+
+JAR FILE
+JAR means Java Archive (Compress).
+It is a file format based on ZIP file format which is used to compress many files into one Single file
+
+Objective of Jar File:
+Jar File is needed to import the properties based on the requirement.
+Total inbuilt class in java are 6000+ present in rt.jar where rt refers to run-time
+
+Steps to create a jar file:
+Right click on project and select Export option.
+Open java folder and select jar file and click on next.
+Browse for appropriate location to place the jar file and name the jar file and click on Save and Finish.
+
+
+
+
+
+
+
+
+
+
+
+
+Steps to build a Java path:
+There are 2 different ways to build a java path to import the properties from a jar file namely
+a) Externally
+b) Internally
+(a) Externally:
+Right click on project and select properties option.
+Select java build path and click on libraries tab.
+Click on add external jars and select a jar file from the respective path and click on open and OK.
+(b) Internally:
+Right click on project and create a new folder with name lib( industry recomended ).
+Add the respective jar file into the lib folder.
+Right click on project and select properties option.
+Select java build path and click on libraries tab.
+Click on add jars and select jar file from the lib folder of respective project and click on Open and Ok.
+
+
+Note:
+It is always a good practice to import the properties from a jar file Internally.
+
+DESIGN PATTERN
+An optimized solution for commonly re-occurring design problems or design needs is known as a Design Pattern.
+Eg: MVC Architecture (Model View Controller).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Costly Resources: 
+Resources which makes use of system properties are known as Costly resources.
+
+Factory or Helper method: 
+It is used to create Implementation object.
+
+NullPointerException: 
+Pointing towards an object which is not present throws an exception called NullPointerException.
+
+ABSTRACTION:
+Hiding the implementation and providing functionalities to the user with the help of Interface is known as Abstraction.
+The output of Abstraction is Loose coupling 
+which can be achieved with the help of Interface.
+
+Interface: 
+It is a media to communicate between User and Service
+
+Loose Coupling: 
+Change in the implementation which does not affect the user is known as Loose Coupling.
+
+Tight Coupling: 
+Change in the implementation which affects the user is known as Tight Coupling.
+
+
+
+
+
+
+
+
+
+
+
+
+
+APPLICATION PROGRAMMING INTERFACE(API):
+-----------------------------------------------------------------------
+API used for inter-application communication i.e. one application can communicate with other application 
+with the help of API to achieve Loose coupling.
+Backbone of API is Abstraction.
+The output of Abstraction is Loose Coupling which is achieved with the help of Interface.
+
+Example for API's are: JDBC, Servlet, Apache POI, Jaxcel...etc
+
+Contents of API:
+The contents of API are Interfaces, Helper Class and Implementation Classes in the form of Jar file.
+Whenever the API's are given in the form of jar files, then such API's developed using "JAVA" as programming language.
+
+
+
+
+
+
+
+
+
+
+
+JDBC API:
++------------------------------------------------------------------------------------------------------------------+
+| Definition of JDBC API:							    
+| JDBC (Java Data Base Connectivity) is a specification given in the form of abstraction API  
+| to achieve loose coupling between Java application and Database server.		    
++------------------------------------------------------------------------------------------------------------------+
+
+It is given by Sun microSystem to achieve loose coupling between Java application and Database Server.
+It contains Interfaces and Helper Class in the form of jar file.
+It is distributed into 2 different packages namely java.sql and javax.sql
+
+The interfaces of JDBC API are as fallows:
+1) Driver, 
+2) Connection, 
+3) Statement, 
+4) PreparedStatement, 
+5) CallableStatement, 
+6) ResultSet... etc...
+JDBC API contains only one helper class in it by name DriverManager.
+
+
+
+
+
+
+JDBC DRIVER:
+It is an implementation of JDBC API.
+It contains implementation classes in the form of jar file.
+It is always specific to the particular Database Server or Vendor.
+These are provided by respective Database Server or Vendors.
++-------------------------------------------------------------------------------------------------------------------------+
+| Note: -								               |
+| For us to communicate with any Database Server and perform any data base operation,               |
+| we need to have two different components mandatorily namely JDBC API and JDBC DRIVER.  |
++-------------------------------------------------------------------------------------------------------------------------+
+
+Advantages of JDBC:
+1) We can achieve loose coupling between Java Application and Database Server.
+2) Platform-independent.
+
+Port Number:
+It is the one which helps us to get connected to a particular server.
+
+Port numbers of Diffrent Database Servers
+Oracle: 1521
+MYSQ: 3306
+MS-SQL: 1433
+Derby: 1527
+
+
+
+
+
+
+
+
+
+Host: 
+It is a Platform on which all the Applications can be executed.
+There are 2 different types of host present namely
+a) Local Host b) Remote Host
+
+a)Local Host: 
+In this case, the applications are restricted or limited only to that particular System.
+Eg: Standalone application.
+b)Remote Host: 
+In case of remote host, the applications are not limited or restricted to any particular system.
+Eg: Any Real time application.
+
+
+URL (Uniform Resource Locator):
+It is the path using which we can access the resources uniquely over the network.
+
+
+
+
+
+
+
+
+CLASS LOADING
+Loading a dot class file into the JVM memory is known as Class Loading.
+A class is generally loaded in 2 different ways namely:
+1) By calling any of the members of a class which can either be a constructor, methods, variables, blocks etc.
+2) By using a static method called forName( ) which is present in Class of java.lang package and whenever we use this method, 
+it throws an exception called ClassNotFoundException.
+
+Syntax: 
+Class.forName("Fully Qualified Class Name");
+
+Note: Driver Classes are provided by the respective Database Servers or
+vendors in the form of jar file.
+
+All the Driver Classes which is a part of JDBC Driver are provided by respective Database Servers or vendors in the form of jar file.
+All the Driver classes must mandatorily implements java.sql.Driver Interface which is a part of JDBC API.
+
+Specifications of JDBC:
+All the Driver classes must contain one Static block in it.
+All the Driver classes must mandatorily implement java.sql.Driver Interface which is a part of JDBC API.
+All the Driver classes must mandatorily be registered with DriverManager using a static method called registerDriver( ).
+
+
+
+
+
+
+
+
+
+
+Steps of JDBC: -
+----------------------
+1) Load or Register the Driver (Driver refers to Driver class provided by respective Database server or vendor).
+
+2) Establish a connection with the Database Server.
+
+3) Create a Statement or Platform.
+
+4) Execute the Sql Queries or Sql Statement.
+
+5) Process the Resultant data (Only in case of DQL).
+
+6) Close all the Costly resources.
+
+
+
+
+
+
+
+
+
+
+
+Step 1:  Load and Register the Driver Class : -
+----------------------------------------------------
+In this step, we have to load and register the Driver classes which is a part of
+JDBC Driver which are provided by respective Database Server or Vendors.
+
+Driver classes can be loaded and registered in 2 different ways namely:
+-----------------------------------------------------------------------------------------
+First Way: -
+---------------
+In this case an object of the Driver class is created by user and then registered 
+by using static method registerDriver( ) of DriverManager Helper Class.
+
+Syntax:
+Driver d =new Driver(); 
+DriverManager.registerDriver(d);
+
+Note:
+This is not a good practice since it causes tight coupling between java application and Database Server.
+
+
+Second Way: -
+------------------
+By using a static method called forName( ) , 
+we can load and register the Driver classes provided by respective Database Servers or Vendors.
+
+syntax:
+Class.forName("com.mysql.jdbc.Driver");
+
+
+
+
+
+
+
+
+
+
+
+
+Costly Resources: -
+------------------------
+Resources which make use of System properties in the form of Stream are known as Costly Resources.
+It is always a good practice to close all the costly resources since it decreases the performance of an application.
+All the Costly resources must be closed within the finally block using an if condition to avoid NullPointerException.
+
+Note : -
+All the Interfaces of JDBC API are considered to be costly resources of JDBC.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Step 2: Establish a Connection between Java Application and Database Server: -
+-----------------------------------------------------------------------------------------------------
+
+In this step, we have to establish a connection between the Java application and 
+the Data base Server by using getConnection( ) method.
+
+getConnection( ) method is static factory/helper method which is used 
+to create and return an implementation object of Connection Interface based on URL.
+Hence, the return type for the getConnection( ) method is Connection interface.
+
+There are 3 diffrent overloaded variants of getConnection( ) method present namely
+getConnection(String URL)
+getConnection(String URL, Properties info)
+getConnection(String URL, String User, String password)
+Whenever we use either of the overloaded variants of getConnection( ) it throws a checked exception called SQLException.
+
+Syntax:
+java.sql.Connection con=DriverManager.getConnection(“URL of Database”);
+
+java.sql.Connection: -
+----------------------------
+It is an interface which is a part of JDBC API and 
+the implementations are provided by respective Database Servers or Vendors as a part of JDBC Driver.
+It is always a good practice to close Connection Interface since it is considered to be a
+Costly Resources which decreases the performance of the application.
+
+
+
+
+
+
+
+
+
+
+java.sql.DriverManager: -
+---------------------------------
+It is a Helper class which is a part of JDBC API 
+It contains two important static methods in it namely 
+1) registerDriver( );
+2) getConnection( );
+
+
+
+
+
+Step 3: Create a Statement or Platform: -
+-----------------------------------------------------
+We need to create a Statement or Platform to execute the Sql queries or Sql Statements.
+A Platform can either be created by using 
+Statement or PreparedStatement or CallableStatement Interface which are the part of JDBC API.
+
+Syntax:
+java.sql.Statement stmt=con.createStatement( ); 
+
+
+
+
+
+
+
+
+
+Step 4: Execute the Sql queries or Sql Statements: -
+----------------------------------------------------------------
+To execute the different types of Sql Statement or Queries, there are three different methods present namely 
+1) execute( ), 
+2) executeUpdate( ), 
+3) executeQuery( ).
+All these methods are declared in Statement Interface 
+but they can be used either with Statement or PreparedStatement or CallableStatement Interface which is a part of JDBC API.
+
+1) execute(): -
+-----------------
+It is a Generic method since it is used to execute any type of Sql queries or statements
+Hence, return type of execute( ) is boolean.
+execute( ) returns a boolean "true" value in case of DQL and boolean "false" in case of DML or DDL.
+
+Syntax:
+stmt.execute("Generic SQL Queries");
+
+2) executeUpdate( ):
+This method is a Specialized method which is used to execute DML Queries.
+Hence, the return type for executeUpdate( ) is Integer.
+
+method Signature: -
+-------------------------
+public int executeUpdate("DML SQL Queries")
+Syntax: stmt.execute(“DML”);
+
+
+
+
+
+
+
+
+
+
+Code to Insert Single Record into the Database table using Statement Interface:
+
+Code to Update a Record in the Database Server using Statement Interface:
+
+Code to Delete a Record from the Database Server using Statement Interface:
+
+Code to Insert Multiple Record into the Database Server using Statement Interface:
+
+
+
+
+
+
+
+
+Note : -
+---------
+Since Compilation takes place each time along with Execution 
+whenever we execute query using Statement interface, Performance of an application decreases.
+Hence, it is a good practice to make use of PreparedStatement Interface to deal with multiple records.
+
+
+
+
+
+
+PlaceHolder: -  ( ? )
+-------------------
+It is a parameter which holds Dynamic values at the run time by the User.
+In case of JDBC, place holder is represented as ?
+
+
+
+String inqry="insert into btm.student values(?,?,?)";
+String upqry ="update btm.student set name=? where id=?"; String delqry="delete from btm.student where id=?";
+String selqry="select * from btm.student where id =?";
+
+
+
+Rules to set the data for a PlaceHolder: -
+----------------------------------------------------
+There are 3 different rules to set the data for a PlaceHolder namely:
+a) We have to set the data for a PlaceHolder before the execution.
+b) The number of data must exactly match the number of PlaceHolder.
+c) We have to set the data for a PlaceHolder by using setter( ).
+
+
+public void setInt(int placeholdernumber, data) 
+
+Example: -
+	setInt(1,34);
+	setString(2,"Gagan");
+	setDouble(3,88.56);
+
+
+
+
+
+
+
+
+
+
+
+java.sql.PreparedStatement: -
+--------------------------------------
+It is an interface which is the part of JDBC API, and its implementation are provided by respective Database Servers or Vendors 
+PreparedStatement interface is sub-interface (Child) of Statement interface.
+It supports the concept of PlaceHolder to take dynamic values at the run time by the user
+It supports the concept of compile once and execute many times (Execution plan).
+In case of PreparedStatement, the query is passed at the time of implementation
+object creation of PreparedStatement interface but not in the execute( ).
+Hence, PreparedStatement are also known as Pre-compiled Statement.
+
+Syntax: -
+------------
+java.sql.PreparedStatement pstmt=con.prepareStatement(Query);
+
+prepareStatement( ) is factory or helper method which creates and returns implementation object of PreparedStatement interface.
+Hence, the return type for prepareStatement( ) is PreparedStatement interface.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fetching the Data from Database Server:
+-------------------------------------------------------
+Whenever we execute a DQL query or DQL Statement we may get a result which is referred as Processed or Resultant data
+The Processed or Resultant data is stored in the Cursor or Buffer memory, which can be fetched by using ResultSet interface which is a part of JDBC API.
+The Structure of Cursor or Buffer memory may differ from the Structure of Database.
+
+
+
+
+java.sql.ResultSet: -
+-------------------------
+It is an Interface which is a part of JDBC API and the implementations are provided by respective Database Servers or vendors as a part of JDBC Driver.
+A set of methods of ResultSet interface are used to fetch the processed or resultant data from the cursor or buffer memory which are known as getter( ).
+
+use cases of getter( ) method of ResultSet interace: -
+-------------------------------------------------------
+
+if Data type is Integer:
+public int getInt(int columnNumber);
+
+if Data type is String:
+public String getString(int columnNumber)
+
+if Data Type is Double: 
+public double getDouble(int columnNumber)
+
+
+Note: -
+---------
+By default, the ResultSet interface does not point to any record in the Cursor or Buffer memory.
+
+next( ): -
+-----------
+It is used to check whether the next record is present in the cursor or buffer memory and returns a boolean value called true or false but not the record.
+It can be used whenever there are minimum no of records present in the cursor or buffer memory.
+public boolean next( );
+
+
+absolute( ): -
+---------------
+It is used to check whether a particular record present in the cursor or buffer memory based on the parameter called int rownumber and 
+returns a boolean value called true or false but not the record.
+It can be used whenever there are n number of records present in the cursor or buffer memory.
+ 
+public boolean absolute(int rownumber)
+
+
+
+
+
+
+
+
+
+executeQuery( ): -
+------------------------
+It is a Specialized method which is used to execute only DQL Queries.
+The outcome of DQL is Processed or Resultant data which is stored in the cursor or buffer memory which can be fetched with the help of ResultSet Interface which is a part of JDBC API.
+Hence, the return type for executeQuery( ) is ResultSet Interface.
+whenever we try to execute a DML or DDL query using this method, it throws an exception called SQLException.
+public ResultSet executeQuery("Only DQL");
+
+
+Creating an implementation object of ResultSet interface: -
+-----------------------------------------------------------------------------
+
+There are 2 different ways to create an implementation object of ResultSet Interface which are as follows:
+
+1st way:
+	boolean flag= stmt.execute("DQL Query");
+	if(flag)
+	{
+	java.sql.ResultSet rs =stmt.getResultSet( );
+	}
+
+2nd way:
+	ResultSet rs =stmt.executeQuery("DQL") ;
+
+
+
+
+
+
+
+
+Code to Fetch all Records from the cursor or buffer memory by using ResultSet Interface:
+
+Code to Fetch a Record from the cursor or buffer memory by using ResultSet Interface:
+
+
+Code to Fetch a Particular Record from the cursor or buffer memory where id=?
+
+Code to Fetch a Particular Record from the cursor or buffer memory where name=?
+
+Code for Login Validation using standard steps of JDBC:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

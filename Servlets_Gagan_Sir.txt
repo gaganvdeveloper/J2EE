@@ -1,7 +1,59 @@
 Servlets : - 
 -------------
-Server: It is a software which manages all the resources along with
-which process the client request and serve the client request.
+
+Types of Application:-
+---------------------------
+CLI Application
+GUI Appliation
+
+
+
+
+Problem Statement of the JDBC Application: -
+------------------------------------------------------------
+Command Line Interface ( CLI )   V/S   Grafical User Interface ( GUI )
+
+
+
+Prerequisets of Servlets: -
+---------------------------------
+Design Pattren:
+	It is an Optimised solution for commonly reoccuring problem or design requirment
+	example: - MVC Design Pattren
+		Singleton Design Pattern
+
+1 Tyre Architecture: -
+---------------------------
+Calculator Application example given in class
+
+2 Tyre Architecture: -
+----------------------------
+Notepad Application example given in class
+
+3 Tyre Application: -
+--------------------------
+E-Commerce Application Example given in class
+
+
+
+
+
+
+
+Server:
+Server is a software which is running in a Computer or a System  that is dedicated to manage all the resources 
+along with which process the client request and serve the client request.
+
+Example Servers: -
+1) Apache Tomcat
+2) Oracle Glass Fish
+3) IBM Web-Sphere
+
+Note: -
+---------
+server manages network resources and providing service to other computers known as client
+It serve various purposes, such as hosting websites, handling email communication, Storing files, or running application in a networked environment
+server often operate 24/7 to ensure constant availability of services to clients.
 
 
 The different types of Server are:
@@ -28,10 +80,11 @@ a) Manual Deployment: In this case, all the resources are made available to the 
 b) Automated Deployment: In this case, all the resources are made available to the Server automatically with the help of Automated tools such as ANT, MAVEN, etc.
 
 
-Whenever a Web Application is compressed, then we deploy it onto the Server in the form of WAR File.
-WAR refers to Web Archive i.e. it is a compressed version of Web Application.
 
-Note : 
+Note : -
+----------
+WAR refers to Web Archive i.e. it is a compressed version of Web Application. 
+Whenever a Web Application is compressed, then we deploy it onto the Server in the form of WAR File.
 By Default the port number of the Apache Tomcat Server is 8080
 
 Pre-requisite for Apache Tomcat Server:
@@ -86,16 +139,18 @@ a) Presentation Logic: It is used to present the contents onto an Application.
 	Technologies Involved: JSP, HTML, CSS, JavaScript, , PHP etc...
 
 b) Persistence Logic: Persist means to Store. 
-Persistence Logic is used to Persist the Data into the Persistence System (Database).
+ Persistence Logic is used to Persist the Data into the Persistence System (Database).
 	Technologies Involved: JDBC, SQL, Hibernate etc...
+
 c) Business Logic: It performs the Core functionality i.e. 
-some set of Calculation and Validation Operations on an Application. 
+ some set of Calculation and Validation Operations on an Application. 
 	Technologies Involved: Servlet, Springs, etc.
 
 Note: -
 ---------
 Dynamic Application or Real-time Application is an integration of all the three different types of Logic 
 such as Presentation Logic, Persistence Logic and Business Logic.
+
 
 Welcome File or Landing Page: -
 -------------------------------------------
@@ -131,19 +186,17 @@ Servlet is a Server-side Java Program which performs all the three different typ
 such as Presentation Logic, Persistence Logic and Business Logic 
 along with which process the Http Client Request and get back Http Response.
 
-also: -
--------
+Also: -
+--------
 Servlet is a Server side Java Program
 Servlet is an API
-Servlet is an Interface
+Servlet is an Interface present in javax.servlet package
 Servlet is an Technology
 
 
-
-
 There are two different types of Servlet present namely:
-a)	GenericServlet
-b)	HttpServlet
+a) GenericServlet
+b) HttpServlet
 
 
 a) GenericServlet:
@@ -191,8 +244,8 @@ Since it is specific to a particular type of protocol called Http Protocol, henc
 HttpServlet supports Session.
 HttpServlet is an Abstract class present in javax.servlet.http package.
 HttpServlet contains only concrete methods without any abstract methods in it.
-In case of HttpServlet, we need to override the respective concrete method called doXYZ( ) for a particular type of Http Request.
-Whenever we override doXYZ( ), it throws an exception called ServletException, IOException.
+In case of HttpServlet, we need to override the respective concrete method called doMethod( ) for a particular type of Http Request.
+Whenever we override doMethod( ), it throws an exception called ServletException, IOException.
 
 
 Syntax: -

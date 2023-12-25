@@ -1,5 +1,6 @@
 Servlets : - 
 -------------
+Prerequisets of Servlets: 
 
 Types of Application:-
 ---------------------------
@@ -7,16 +8,15 @@ CLI Application
 GUI Appliation
 
 
-
-
 Problem Statement of the JDBC Application: -
 ------------------------------------------------------------
 Command Line Interface ( CLI )   V/S   Grafical User Interface ( GUI )
 
 
+Web Application: -
+-----------------------
+A web application is a software application that runs on a web server and is accessed by users through a web browser over a network, typically the internet. 
 
-Prerequisets of Servlets: -
----------------------------------
 Design Pattren:
 	It is an Optimised solution for commonly reoccuring problem or design requirment
 	example: - MVC Design Pattren
@@ -38,9 +38,8 @@ E-Commerce Application Example given in class
 
 
 
-
-
-Server:
+Server: -
+-----------
 Server is a software which is running in a Computer or a System  that is dedicated to manage all the resources 
 along with which process the client request and serve the client request.
 
@@ -113,6 +112,8 @@ Note : -
 ---------
 Web Server is used to execute only Web Applications.
 Application Server is used to execute both Web and Enterprise Application (JEE Application).
+
+
 
 JEE APPLICATION : -
 -----------------------------

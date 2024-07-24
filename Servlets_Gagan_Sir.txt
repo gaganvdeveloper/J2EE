@@ -1,9 +1,9 @@
 Servlets : - 
 -------------
-Prerequisets of Servlets: 
+Prerequisets: -
 
 Types of Application:-
----------------------------
+----------------------
 CLI Application
 GUI Appliation
 
@@ -15,22 +15,43 @@ Command Line Interface ( CLI )   V/S   Grafical User Interface ( GUI )
 
 Web Application: -
 -----------------------
-A web application is a software application that runs on a web server and is accessed by users through a web browser over a network, typically the internet. 
+A web application is a software application that runs on a web server 
+and is accessed by users through a web browser over network, typically the internet. 
+Examples: -
+	Gmail, YouTube, Amezon, Flipkart. etc...
 
-Design Pattren:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Design Pattren: -
+-----------------
 	It is an Optimised solution for commonly reoccuring problem or design requirment
-	example: - MVC Design Pattren
-		Singleton Design Pattern
+	example: - 	MVC Design Pattren
+			Singleton Design Pattern
 
-1 Tyre Architecture: -
+1 Tier Architecture: -
 ---------------------------
 Calculator Application example given in class
 
-2 Tyre Architecture: -
+2 Tire Architecture: -
 ----------------------------
 Notepad Application example given in class
 
-3 Tyre Application: -
+3 Tire Application: -
 --------------------------
 E-Commerce Application Example given in class
 
@@ -38,9 +59,58 @@ E-Commerce Application Example given in class
 
 
 
+
+
+
+
+
+
+
+
+Dynamic Application: -
+------------------------------
+There are three different types of Logic associated with Dynamic Application which are as follows:
+a) Presentation Logic
+b) Persistence Logic
+c) Business Logic
+
+a) Presentation Logic: It is used to present the contents onto an Application.
+	Technologies Involved: JSP, HTML, CSS, JavaScript, , PHP etc...
+
+b) Persistence Logic: Persist means to Store. 
+ Persistence Logic is used to Persist the Data into the Persistence System (Database).
+	Technologies Involved: JDBC, SQL, Hibernate etc...
+
+c) Business Logic: It performs the Core functionality i.e. 
+ some set of Calculation and Validation Operations on an Application. 
+	Technologies Involved: Servlet, Springs, etc.
+
+Note: -
+---------
+Dynamic Application or Real-time Application is an integration of 
+all the three different types of Logic such as 
+Presentation Logic, Persistence Logic and Business Logic.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Server: -
 -----------
-Server is a software which is running in a Computer or a System  that is dedicated to manage all the resources 
+Server is a software 
+which is running in a Computer or a System 
+that is dedicated to manage all the resources (Application's)
 along with which process the client request and serve the client request.
 
 Example Servers: -
@@ -48,11 +118,19 @@ Example Servers: -
 2) Oracle Glass Fish
 3) IBM Web-Sphere
 
+
 Note: -
 ---------
 server manages network resources and providing service to other computers known as client
-It serve various purposes, such as hosting websites, handling email communication, Storing files, or running application in a networked environment
+It serve various purposes, such as hosting websites, handling email communication, Storing files, 
+or running application in a networked environment
 server often operate 24/7 to ensure constant availability of services to clients.
+
+
+
+
+
+
 
 
 The different types of Server are:
@@ -60,23 +138,68 @@ a) Database Server
 b) Application Server
 c) Web Server
 
-a) Database Server: It is used to deal with Data (Includes Storage, Retrieval, Management and Manipulation).
+
+
+a) Database Server: It is used to deal with Data 
+(Includes Storage, Retrieval, Management and Manipulation).
 Eg: Oracle, Mysql, Ms-sql, Derby  etc...
-b) Application Server: It is used to execute a Dynamic Application or Real- time Application.
+b) Application Server: 
+It is used to execute a Dynamic Application or Real- time Application.
 Eg: JBOSS, IBM WebSphere, Oracle WebLogic.
 Apache Tomcat Server internally acts as Application Server.
 c) Web Server: It is used to execute only Web Application.
 Eg: Apache Tomcat, Oracle Glass Fish.
 
 
-Deployment: Making all the Resources available to the Server.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Deployment: 
+	Making all the Resources available to the Server.
+
 There are two different types of Deployment present namely:
 a) Manual Deployment
 b) Automated Deployment
 
-a) Manual Deployment: In this case, all the resources are made available to the Server manually.
+a) Manual Deployment: 
+In this case, all the resources are made available to the Server manually.
 
-b) Automated Deployment: In this case, all the resources are made available to the Server automatically with the help of Automated tools such as ANT, MAVEN, etc.
+b) Automated Deployment: 	
+In this case, all the resources are made available to the Server automatically 
+with the help of Automated tools such as MAVEN, etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -85,6 +208,14 @@ Note : -
 WAR refers to Web Archive i.e. it is a compressed version of Web Application. 
 Whenever a Web Application is compressed, then we deploy it onto the Server in the form of WAR File.
 By Default the port number of the Apache Tomcat Server is 8080
+
+
+
+
+
+
+
+
 
 Pre-requisite for Apache Tomcat Server:
 There are three different pre-requisites for Apache Tomcat Server namely:
@@ -115,63 +246,92 @@ Application Server is used to execute both Web and Enterprise Application (JEE A
 
 
 
-JEE APPLICATION : -
------------------------------
-Definition: It is a Specification for developing both Web and Enterprise Application 
-which is given in the form of Abstraction API to achieve Loose Coupling between Application and the Server.
+
+
+
+
+
+
+
+
+
+
+
+JEE : -
+-------------------
+It is a platform for developing both Web and Enterprise Application 
+which is given in the form of API to achieve Loose Coupling between Application and the Server.
 
 Few of the JEE API are:
 a) Servlet
 b) JSP- Java Server Page.
 c) EJB- Enterprise Java Bean.
-d) JTA- Java Transaction API.
-e) JPA- Java Persistence API.
-f) JMA- Java Mail API.
-g) JMS-Java Message Service.
+d) JPA- Java Persistence API.
+e) JMA- Java Mail API.
+f) JMS- Java Message Service.
 
-Dynamic Application: -
-------------------------------
-There are three different types of Logic associated with Dynamic Application which are as follows:
-a) Presentation Logic
-b) Persistence Logic
-c) Business Logic
 
-a) Presentation Logic: It is used to present the contents onto an Application.
-	Technologies Involved: JSP, HTML, CSS, JavaScript, , PHP etc...
 
-b) Persistence Logic: Persist means to Store. 
- Persistence Logic is used to Persist the Data into the Persistence System (Database).
-	Technologies Involved: JDBC, SQL, Hibernate etc...
 
-c) Business Logic: It performs the Core functionality i.e. 
- some set of Calculation and Validation Operations on an Application. 
-	Technologies Involved: Servlet, Springs, etc.
 
-Note: -
----------
-Dynamic Application or Real-time Application is an integration of all the three different types of Logic 
-such as Presentation Logic, Persistence Logic and Business Logic.
+
+
+
+
+
+Steps to create a JEE Application: -
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Welcome File or Landing Page: -
 -------------------------------------------
-A File or Page which is automatically displayed whenever the Client uses an Application is known as Welcome File or Landing Page.
-index is considered to be the default Welcome File or Landing Page which is automatically loaded by the JEE Container whenever the Client uses an Application.
+A File or Page which is automatically displayed whenever the Client 
+uses an Application is known as Welcome File or Landing Page.
+
+index is considered to be the default Welcome File or Landing Page 
+which is automatically loaded by the JEE Container whenever the Client uses an Application.
+
 We can explicitly make any file as Welcome File or Landing Page by renaming it as index.
-Multiple files can be configured as Welcome File or Landing Page but the JEE Container gives the priority based on the Occurance.
-If the configured files are not available, then the JEE Container fails to load an Application where it throws Http 404 error. (Resource Not Available)
+
+Multiple files can be configured as Welcome File or Landing Page 
+but the JEE Container gives the priority based on the Occurance.
+
+If the configured files are not available, then the JEE Container fails to load an Application 
+where it throws Http 404 error. (Resource Not Available)
 
 
-Code to create a Basic Web Application: -
----------------------------------------------------
 
 
 
 Web.xml or Deployment Descriptor Stub: -
 ------------------------------------------------------
-It is a configuration file in xml format which is used to store the information related to the configurable resources of an Application.
+It is a configuration file in xml format which is used to 
+store the information related to the configurable resources of an Application.
+
 Each and every Application must mandatorily have only one web.xml 
-without which the JEE Container fails to load an Application where it throws Http 404 error (Resources Not Available).
+without which the JEE Container fails to load an Application 
+where it throws Http 404 error (Resources Not Available).
 
 Note: -
 ---------
@@ -181,43 +341,145 @@ Root Tag of web.xml file is
 
 
 
+Note: -
+-------
+To configure the any other file other than index.jsp as default
+welcome page or landing page we have to use web.xml configuration file and 
+explicit configuration required in web.xml
+
+configuration is as fallows: -
+	<web-app>
+		<welcome-file-list>
+			<welcome-file>filename.extention</welcome-file>
+		</welcome-file-list>	
+	</web-app>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 SERVLET: -
 ----------------
-Servlet is a Server-side Java Program which performs all the three different types of Logic 
+Servlet is a Server-side Java Program that runs within a server. 
+Servlets receive and respond to requests from Web clients,
+
+It performs all the three different types of Logic 
 such as Presentation Logic, Persistence Logic and Business Logic 
-along with which process the Http Client Request and get back Http Response.
+along with which process the Client Request and get back Response.
+
+
+Servlets are used to
+handle the request from the server,
+process the request,
+produce the response,
+and then send a response back to the server. 
+
 
 Also: -
 --------
-Servlet is a Server side Java Program
+Servlet is a Small Server side Java Program
 Servlet is an API
 Servlet is an Interface present in javax.servlet package
 Servlet is an Technology
 
 
-There are two different types of Servlet present namely:
+
+
+
+
+
+
+
+
+
+
+
+Servlet (I):- 
+--------------
+Servlet is an Interface present in javax.servlet package.
+It Defines methods that all servlets must implement.
+
+
+Servlet interface has 5 abstract methods are as fallows: -
+1)getServletConfig();
+2)getServletInfo();
+3)init();
+4)service();
+5)destroy();
+
+Note: -
+init(), service() and destroy() are called life-cycle methods.
+
+service() Called by the servlet container to allow the servlet to respond to a request.
+
+
+
+
+
+There are two different types of Servlet-classes present namely:
 a) GenericServlet
 b) HttpServlet
 
 
-a) GenericServlet:
- Since it is not specific to any Protocol or independent of Protocol, 
-hence the name GenericServlet. GenericServlet does not support Session.
 
+
+
+
+
+
+
+
+
+
+
+
+a) GenericServlet:
+Generic servlet is a abstract class present in javax.servlet package 
+Fully Qualified Class Name:-(javax.servlet.GenericServlet)
+
+Since GenericServlet is independent of Protocol, 
+hence the name GenericServlet. 
+
+Note: -
+GenericServlet does not support Session.
 Session: Any activity which takes place between start time and stop time is known as Session.
 
 
 GenericServlet is an Abstract Class present in javax.servlet package.
-GenericServlet contains three methods in it out of which one is an abstract method and the other two are concrete methods.
+GenericServlet contains three important methods in it out of which one is an abstract method 
+and the other two are concrete methods.
 
-The abstract method present in GenericServlet is named as service( ) 
+The abstract method present in GenericServlet is named as service( )
+ 
 which has to be mandatorily overridden for two important reasons namely:
 i) Since service( ) is an abstract method.
 ii) Since service( ) is the only method which takes a parameter called ServletRequest and ServletResponse 
 which is responsible for processing the client request.
+
 Whenever we override service( ), it throws an exception called ServletException and IOException.
 The other two methods present in GenericServlet are named as init( ) and destroy( ) 
 Where overriding these two methods are optional since these are concrete methods.
+
+
+
+
+
+
 
 
 Writing a GenericServlet: -
@@ -230,7 +492,7 @@ public class OurServlet extends javax.servlet.GenericServlet
 	public void service(ServletRequest req, ServletResponse resp) throws ServletException, IOException
 	{
 
-		SERVLET LOGIC TO BE WRITTEN HERE
+		//SERVLET LOGIC TO BE WRITTEN HERE
 
 	}
 }
@@ -239,45 +501,97 @@ public class OurServlet extends javax.servlet.GenericServlet
 
 
 
+UI/FORM DATA: -
+------------------------
+The Data which is entered by the enducer (client) on a Form Page 
+and is submitted to the Server in the form of Key and Value Pair is known as UI/FORM DATA.
 
-b) HttpServlet:
-Since it is specific to a particular type of protocol called Http Protocol, hence the name HttpServlet.
-HttpServlet supports Session.
-HttpServlet is an Abstract class present in javax.servlet.http package.
-HttpServlet contains only concrete methods without any abstract methods in it.
-In case of HttpServlet, we need to override the respective concrete method called doMethod( ) for a particular type of Http Request.
-Whenever we override doMethod( ), it throws an exception called ServletException, IOException.
+All the keys associated with Form Page are represented as Unique Identifier in the form of name.
+The UI/Form Data is always associated with a Request and 
+it can be accessed only within the method which accepts ServletRequest Object or HttpServletRequest Object
+The UI/Form Data can be fetched by using getParameter( ) of ServletRequest object.
+
+public String getParameter(String key)
+a) In this method, the key is taken as an Argument.
+b) If the key is present, then the method returns associated value.
+c) If the key is not present, then the method returns NULL.
+
+Note: -
+--------
+Complete Form Data present in Request Object
+
+Once a Request is made by client, 
+the data are carried to the Server as a part of Request Object 
+in the form of Key and Value Pair which is displayed in the URL.
 
 
-Syntax: -
------------
-protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
 
-There are 8 different types of Http Request present namely:
-POST
-GET
-PUT
-DELETE
-TRACE
-OPTION
-CONNECT
-HEAD
 
-Writing a HttpServlet:
-Write a Servlet Class which extends an Abstract class called HttpServlet as follows:
 
-public class OurServlet extends javax.servlet.http.HttpServlet
+Code for UI/FORM Data using web.xml
+
+
+HTML file: -
+---------------
+<!DOCTYPE html>
+<html>
+	<meta charset="ISO-8859-1">
+	<body bgcolor="cyan">
+		<form action="fs">
+			Name :<input type="text" name="nm">
+			<br></br>
+			Place :<input type="text" name="pl">
+			<br></br>
+			<input type="submit" value="Request">
+		</form>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+Servlet Source Code: -
+----------------------------
+
+package org.btm.uiApp; 
+import java.io.*;
+import javax.servlet.*;
+
+public class FirstServlet extends GenericServlet
 {
 	@Override
-	protected void doXXX(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
+ 
+	public void service(ServletRequest req, ServletResponse resp) throws ServletException, IOException
 	{
-		SERVLET LOGIC TO BE WRITTEN HERE
-	}
+	String name=req.getParameter("nm"); String place=req.getParameter("pl");
+
+	PrintWriter out=resp.getWriter( ); 
+	out.println("<html><body bgcolor='yellow'><h1>User Details: "+name+"from "+place+"</h1></body></html>");// PRESENTATION LOGIC // 
+	out.close( );
+}
 }
 
 
-In case of HttpServlet, it is not a good practice to override the service( ) 
-since HttpServlet depends upon the type of Http Request. example: - Get, Post, Put etc...
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Web Resources can be accessed based on Unique URL Pattern.
@@ -285,33 +599,6 @@ Since Servlet is also a Web Resource, it has to be accessed based on Unique URL 
 Any Resource can always be configured in two different ways namely:
 a) Web.xml
 b) Annotation
-
-Note: -
---------
-To configure any resources using Annotation, the JEE Version to be used must be 3.0 or above.
-
-
-SERVLET HIERARCHY: -
-----------------------------------
-Servlet ( i )          ServletConfig ( i )
-
-          GenericServlet ( AC )
-
-          HttpServlet ( AC )
-
-
-
-Criteria for a Servlet:
-There are three different criteria present for a Servlet namely:
-a) Create Servlet
-b) Configure Servlet
-c) Deploy Servlet
-
-
-Steps To Create A Servlet Project: -
---------------------------------------------
-
-
 
 
 
@@ -338,89 +625,123 @@ Syntax: -
 	</servlet-mapping>
 </web-app>
 
-UI/FORM DATA: -
-------------------------
-Definition: The Data which is entered by the enducer (client) on a Form Page 
-and is submitted to the Server in the form of Key and Value Pair is known as UI/FORM DATA.
 
-All the keys associated with Form Page are represented as Unique Identifier in the form of name.
-The UI/Form Data is always associated with a Request and can be accessed only within the method which accepts ServletRequest Object or HttpServletRequest Object
-The UI/Form Data can be fetched by using getParameter( ) of ServletRequest object.
 
-public String getParameter(String key)
-a) In this method, the key is taken as an Argument.
-b) If the key is present, then the method returns associated value.
-c) If the key is not present, then the method returns NULL.
+
+
+
+
+
+
+
+
+
+
+
+
+SERVLET HIERARCHY: -
+----------------------------------
+Servlet ( i )          ServletConfig ( i )
+
+          GenericServlet ( AC )
+
+          HttpServlet ( AC )
+
+
 
 Note: -
 --------
-Complete Form Data present in Request Object
-
-Once a Request is made by client, 
-the data are carried to the Server as a part of Request Object in the form of Key and Value Pair which is displayed in the URL.
-
-Code for UI/FORM Data using web.xml
-
-HTML file: -
----------------
-<!DOCTYPE html>
-<html>
-	<meta charset="ISO-8859-1">
-	<body bgcolor="cyan">
-		<form action="fs">
-			Name :<input type="text" name="nm">
-			<br></br>
-			Place :<input type="text" name="pl">
-			<br></br>
-			<input type="submit" value="Request">
-		</form>
-	</body>
-</html>
+To configure any resources using Annotation, 
+the JEE Version to be used must be 3.0 or above.
 
 
-Servlet Source Code: -
-----------------------------
 
-package org.btm.uiApp; 
-import java.io.*;
-import javax.servlet.*;
 
-public class FirstServlet extends GenericServlet
+
+
+b) HttpServlet:
+Since it is specific to a particular type of protocol called Http Protocol, hence the name HttpServlet.
+HttpServlet supports Session.
+HttpServlet is an Abstract class present in javax.servlet.http package.
+HttpServlet contains only concrete methods without any abstract methods in it.
+In case of HttpServlet, we need to override the respective concrete method 
+called do( ) for a particular type of Http Request.
+Whenever we override doMethod( ), it throws an exception 
+called ServletException, IOException.
+
+
+Syntax: -
+-----------
+protected void doGet(HttpServletRequest req, HttpServletResponse resp) 
+				throws ServletException, IOException;
+
+There are 7 different types of Http Request present namely:
+POST
+GET
+PUT
+DELETE
+HEAD
+OPTIONS
+TRACE
+
+
+Note: -
+Servlets typically run on multithreaded servers,
+so be aware that a servlet must handle concurrent requests 
+and be careful to synchronize access to shared resources.
+
+
+
+
+
+
+
+
+
+
+
+In case of HttpServlet, it is not a good practice to override the service( ) 
+since HttpServlet depends upon the type of Http Request. 
+example: - Get, Post etc...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Writing a HttpServlet: -
+-----------------------
+
+public class OurServlet extends javax.servlet.http.HttpServlet
 {
 	@Override
- 
-	public void service(ServletRequest req, ServletResponse resp) throws ServletException, IOException
+	protected void do---(HttpServletRequest req, HttpServletResponse resp) 
+					throws ServletException, IOException
 	{
-	String name=req.getParameter("nm"); String place=req.getParameter("pl");
-
-	PrintWriter out=resp.getWriter( ); 
-	out.println("<html><body bgcolor='yellow'><h1>User Details: "+name+"from "+place+"</h1></body></html>");// PRESENTATION LOGIC // 
-	out.close( );
-}
+		//SERVLET LOGIC TO BE WRITTEN HERE
+	}
 }
 
 
-WEB.xml Code: -
-----------------------
-<?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema- instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
-	<welcome-file-list>
-		<welcome-file>form.html</welcome-file>
-	</welcome-file-list>
-	<servlet-mapping>
-		<servlet-name>FirstServ</servlet-name>
-		<url-pattern>/fs</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>FirstServ</servlet-name>
-		<servlet-class>org.btm.uiApp.FirstServlet</servlet-class>
-	</servlet>
-</web-app>
+
+
+
+
+
 
 
 Code for UI/Form Data using Annotation: -
--------------------------------------------------------
-
+------------------------------------------
 
 
 
@@ -428,43 +749,137 @@ Code for UI/Form Data using Annotation: -
 
 
 SERVLET LIFECYCLE: -
-----------------------------------
-Definition: 
-Servlet Lifecycle depicts or represents the events or phases from Servlet Object Creation until Servlet Object Destruction.
+--------------------
+Servlet Lifecycle represents the phases of a Servlet Object
+from Servlet Object Creation until Servlet Object Destruction.
 
 
-There are four different lifecycle phases present for a servlet which are as follows: -
-a) Instantiation/Object Creation Phase
-b) Initialization Phase
-c) Service Phase
-d) Destruction Phase
 
-a) Instantiation/Object Creation Phase:
+There are five different lifecycle phases present 
+for a servlet which are as follows: -
+a) Servlet Class Loading Phase
+b) Instantiation/Object Creation Phase
+c) Initialization Phase
+d) Service Phase
+e) Destruction Phase
+
+
+
+a) Servlet Class Loading Phase:
+	In this phase servlet class is loaded in to 
+	JVM Memory to and ready to execute
+
+
+
+
+
+b) Instantiation/Object Creation Phase:
 	In this phase, the Servlet Object has to be created.
-	Whenever a Client makes a First Request to a Servlet, one Servlet Object is created by the JEE Container by calling the default constructor of Servlet and now Servlet Lifecycle begins.
-	If the JEE Container does not find the default constructor of Servlet, then the JEE Container throws an exception called ServletException with a root cause InstantiationException (Object not Created).
-	Immediately after the Servlet Object Creation, one ServletConfig object is created by the JEE Container which is used to initialize the resources of Servlet Object.
-	Hence, the scope of ServletConfig is always limited to that particular Servlet Object.
+	Whenever a Client makes a First Request to a Servlet, 
+	one Servlet Object is created by the JEE Container by 
+	calling the default constructor of 
+	Servlet and now Servlet Lifecycle begins.
 
-b) Initialization Phase:
+	If the JEE Container does not find the default constructor of Servlet,
+	 then the JEE Container throws an exception called ServletException 
+	with a root cause InstantiationException (Object not Created).
+
+	Immediately after the Servlet Object Creation, 
+	one ServletConfig object is created by the JEE Container 
+	which is used to initialize the resources of Servlet Object.
+
+	Hence, the scope of ServletConfig is always limited to that 
+	particular Servlet Object.
+
+
+
+c) Initialization Phase:
 	In this phase, Servlet Object has to be Initialized.
-	ServletObject has to be initialized by using init(ServletConfig) which takes ServletConfig as a parameter which is used to initialize the resources of Servlet Object.
+
+	ServletObject has to be initialized by using init(ServletConfig) 
+	which takes ServletConfig as a parameter which is used to initialize 
+	the resources of Servlet Object.
+
 	init(ServletConfig) is always called by the JEE Container only once.
-	If this phase fails, then the JEE Container throws an exception called ServletException.
+
+	If this phase fails, then the JEE Container throws an exception called 
+	ServletException.
+
+Important Note: -
+-----------------
+	Servlet Container allways search for the no-argument constructor or
+	zero-parameterized constructor with-out which servlet container fails
+	to create the servlet object...
+if no zero-parameretized constructor means It will throw an error with 
+http status code 500 Internal Server Error...
+
+
+
 
 c) Service Phase:
-	In this phase, service( ) is called which is responsible for processing each and every client request.
-	In this phase, the JEE Container creates one request and one response object for each and every client request including the first client request.
+	In this phase, service( ) is called which is responsible for 
+	processing each and every client request.
+	
+	In this phase, the JEE Container creates one request and 
+	one response object for each and every client request including 
+	the first client request.
+
 	By default, Servlet is multi-threaded.
 
+
+
+
+
+
+
+
+
 d) Destruction Phase:
-	In this phase, the destroy( ) is called by the JEE Container to close all the Costly Resources.
+	In this phase, the destroy( ) is called by the JEE Container 
+	to close all the Costly Resources.
+
 	destroy( ) is called by the JEE Container only once.
+
+
+
+Note: -
 	If this phase fails, then the performance of an application decreases.
 
 
-Code for Servlet Lifecycle using web.xml: -
-------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+Code for Servlet Lifecycle using Annotation: -
+----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 LOAD ON STARTUP: -
 ------------------------------
@@ -473,38 +888,121 @@ a) Whenever a client makes a first request to a Servlet.
 b) In case of Load-on-Startup.
 
 	<load-on-startup> is a tag which is a sub-tag of <Servlet>.
-	In case of Load-on-Startup, the JEE Container creates a Servlet Object by calling the default constructor of Servlet at the time of Server Startup without waiting for the first client request so that the delay time made by the first client request can be avoided which helps in increasing the performance of an Application.
-	In case of Load-on-Startup, only service( ) will be executed even for the first client request.
-	Load-on-Startup must always be configured with a positive integer value but the JEE Container gives the priority based on lowest positive integer value.
-	Whenever two Servlets are configured with the same positive integer value, then sequential execution takes place.
 
-Note: -
---------
-Whenever Load-on-Startup is configured with a negative integer value, then the Servlet Object is created based on first client request.
+	In case of Load-on-Startup, the JEE Container creates a Servlet 
+	Object by calling the default constructor of Servlet at the time 
+	of Server Startup without waiting for the first client request 
+	so that the delay time made by the first client request can be 
+	avoided which helps in increasing the performance of an Application.
+
+	In case of Load-on-Startup, only service( ) will be executed even 
+	for the first client request.
+	Load-on-Startup must always be configured with a positive integer 
+	value but the JEE Container gives the priority based on lowest 
+	positive integer value.
+	Whenever two Servlets are configured with the same positive 
+	integer value, then sequential execution takes place.
+
+
 
 
 
 Code for Servlet Lifecycle in case of load-on-startup using web.xml: -
----------------------------------------------------------------------------------------
+----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Code for Servlet Lifecycle in case of load-on-startup using Annotation: -
------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Note: -
+--------
+Whenever Load-on-Startup is configured with a negative integer value, 
+then the Servlet Object is created based on first client request.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 ServletConfig: - ( i )
 -------------------------
 	ServletConfig is an Interface which is present in javax.servlet package.
-	Since it is an Interface an implementation object can be created by the JEE Container by using a factory or helper method called getServletConfig( ) immediately after the Servlet Object Creation.
-	Only one implementation object of ServletConfig is created for a particular Servlet Object.
-	The data present in ServletConfig object are init/initialization parameters which is made available only for that particular Servlet Object.
-	Hence, the scope of ServletConfig Object is limited to that particular Servlet Object.
-	init/initialization parameters are the data in the form of key and value pair which is used to initialize the resources of Servlet Object.
-	The init/initialization parameters present in ServletConfig Object can be fetched by using getInitParameter( ). public String getInitParameter(String key)
+
+	Since it is an Interface an implementation object can be created by the 
+	JEE Container by using a factory or helper method called 
+	getServletConfig( ) immediately after the Servlet Object Creation.
+
+	Only one implementation object of ServletConfig is created for a 
+	particular Servlet Object.
+
+	The data present in ServletConfig object are init/initialization 
+	parameters which is made available only for that particular Servlet 
+	Object.
+	
+	Hence, the scope of ServletConfig Object is limited to that particular 
+	Servlet Object.
+
+	init/initialization parameters are the data in the form of key and value 
+	pair which is used to initialize the resources of Servlet Object.
+
+	The init/initialization parameters present in ServletConfig Object can 
+	be fetched by using getInitParameter( ). 
+	public String getInitParameter(String key)
+
 	In this method, the key is taken as an Argument.
+
 	If the key is present, then the method returns associated value.
+
 	If the key is not present, then the method returns NULL.
-	Whenever there are n number of init/initialization parameters declared, then we use getInitParameterNames( ).
+
+	Whenever there are n number of init/initialization parameters declared, 
+	then we use getInitParameterNames( ).
 
 
 Syntax:
@@ -513,19 +1011,40 @@ config.getInitParameter(key);
 
 
 
+
+
+
 ServletContext: - ( i )
 --------------------------
 	ServletContext is an Interface present in javax.servlet package.
-	Since it is an Interface, an implementation object is created by the JEE Container by using the factory/helper method called getServletContext( ) at the time of Application Loading.
-	Only one implementation Object of ServletContext is created by the JEE Container for one entire Application which has many references shared throughout the Application.
-	The data present in ServletContext are context parameters and attributes which is made available throughout the Application.
+
+	Since it is an Interface, an implementation object is created by the 
+	JEE Container by using the factory/helper method called 
+	getServletContext( ) at the time of Application Loading.
+
+	Only one implementation Object of ServletContext is created by the 
+	JEE Container for one entire Application which has many references 
+	shared throughout the Application.
+
+	The data present in ServletContext are context parameters and attributes 
+	which is made available throughout the Application.
+
 	Hence, the scope of ServletContext is throughout the Application.
-	context parameters are the data in the form of key and value pair which is made available throughout the Application.
-	The context parameters present in ServletContext can be fetched by using getInitParameter( ). public String getInitParameter(String key)
+
+	context parameters are the data in the form of key and value pair 
+	which is made available throughout the Application.
+
+	The context parameters present in ServletContext can be fetched by 
+	using getInitParameter( ). public String getInitParameter(String key)
+
 	In this method, the key is taken as an Argument.
+
 	If the key is present, then the method returns associated value.
+
 	If the key is not present, then the method returns NULL.
-	Whenever there are n number of context parameters declared, then we use getInitParameterNames( ).
+
+	Whenever there are n number of context parameters declared, 
+	then we use getInitParameterNames( ).
 
 
 
@@ -533,6 +1052,18 @@ Syntax: -
 -----------
 ServletContext context=getServletContext( ); 
 context.getInitParameter(key);
+
+
+
+
+
+
+
+
+
+
+
+
 
 Attribute
 	It is the data in the form of key and value pair where key must be a Unique String and the value can be any Object.
@@ -545,9 +1076,7 @@ Attribute
 
 
 Code to Dynamically save the Data into the Database Server using Post Request: -
-------------------------------------------------------------------------------------------------------
-
-
+--------------------------------------------------------------------------------
 Http Get
 	Get request is used to get some contents or resources from the Server.
 	Get request deals with only Limited Data i.e. 1024 Characters.
@@ -559,14 +1088,50 @@ Http Get
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Code to Fetch the Data from the Database Server using Get Request: -
----------------------------------------------------------------------------------------
+------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 SERVLET CHAINING
-Definition: Chaining from one Servlet to another resource which can either be Html, JSP or another Servlet is known as Servlet Chaining.
-Objective of Servlet Chaining: Servlet Chaining is needed to make the data present in one Servlet available to other resources which can either be a Html, JSP or another Servlet.
+Definition: Chaining from one Servlet to another resource which can either be Html, 
+JSP or another Servlet is known as Servlet Chaining.
+
+Objective of Servlet Chaining: 
+Servlet Chaining is needed to make the data present 
+in one Servlet available to other resources which can either be a Html, JSP or another Servlet.
 
 
 There are two different ways in which we can perform Servlet Chaining namely:
@@ -574,35 +1139,253 @@ a) RequestDispatcher
 b) sendRedirect
 
 
+
+
+
+
+
+
+
+
+
 a) RequestDispatcher
 	RequestDispatcher is an Interface present in javax.servlet package.
-	Since it is an Interface, an implementation object can be created by the JEE Container by using a factory or helper method by name called getRequestDispatcher( ) whenever a client makes any request to a Servlet.
-	
-	RequestDispatcher rd = req.getRequestDispatcher( );
 
-	We can get the reference of RequestDispatcher Interface in two different ways namely:
-i)	request(req)
-ii)	context
-	Whenever we use req.getRequestDispatcher( ), then we can chain from one Servlet to another resources of the same Application.
-	Whenever we use context.getRequestDispatcher( ), then we can chain from one Servlet to another resources of different Application.
-	There are two different methods present in RequestDispatcher namely forward( ) and include( )
+	Since it is an Interface, an implementation object can be created by 
+	the JEE Container by using a factory or helper method by name called 
+	getRequestDispatcher( ) whenever a client makes any request to a Servlet.
+	
+
+	RequestDispatcher rd = req.getRequestDispatcher("src");
+
+
+
+	Whenever we use req.getRequestDispatcher( ), then we can chain from one 
+	Servlet to another resources of the same Application.
+
+
+	There are two different methods present in RequestDispatcher namely 
+	forward( ) and include( )
 
 	public void forward(ServletRequest req, ServletResponse resp)
 	public void include(ServletRequest req, ServletResponse resp)
 
-	In case of forward( ), the request is forwarded from one Servlet to another resources(Html, JSP, Servlet) and finally the chained resource gets back the response.
-	In case of include( ), all the chained resources are included into main or source Servlet and finally the main or source Servlet gets back the response.
+	In case of forward( ), the request is forwarded from one Servlet 
+	to another resources(Html, JSP, Servlet) and finally the chained 
+	resource gets back the response.
+
+	In case of include( ), all the chained resources are included into 
+	main or source Servlet and finally the main or source Servlet gets 
+	back the response.
 
 Note: -
 ---------
 	In case of forward( ) and include( ), the URL remains the same.
-	Hence, both forward( ) and include( ) works at the Server Side i.e. RequestDispatcher works at the Server Side.
+	Hence, both forward( ) and include( ) works at the Server Side 
+	i.e. RequestDispatcher works at the Server Side.
+
+
+
+
+Warning: -
+----------	
+using RequestDispatcher() we can achive the chaining 
+within the same project only...
+
+
+to chain to external resource class to be continued...
+
+
+
+
+
+
 
 
 b) sendRedirect()
-	sendRedirect is a method of HttpServletResponse Interface present in javax.servlet.http package.
+	sendRedirect is a method of HttpServletResponse Interface present 
+	in javax.servlet.http package.
+
 	Using sendRedirect( ), we can chain to external resources also.
-	sendRedirect( ) can be used to chain to other resources where the data are not involved.
+
+	sendRedirect( ) can be used to chain to other resources where the 
+	data are not involved.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Session Management: -
+----------------------
+Cookies
+Hidden form field
+URL re-writing 
+Http session management
+
+
+
+
+
+
+
+
+
+
+
+
+
+JSP: -
+--------
+JSP tags
+JSP Directives
+JSP Life Cycle
+JSP implicit object
+
+
+
+
+
+
+
+
+Java Server Pages (JSP)
+1. Introduction to JSP
+•	Definition: JSP is a technology used to create dynamic web content. It allows Java code and certain predefined actions to be embedded into static content.
+•	Purpose: It is designed to simplify the process of developing web pages that display dynamically-generated content.
+
+
+2. JSP Architecture
+•	Client-Server Model: JSP follows the client-server model where the client (browser) sends a request to the server, and the server processes the request and sends a response back to the client.
+
+
+
+3. JSP Lifecycle: 
+The lifecycle of a JSP page includes:
+1.	Translation Phase: 	JSP is translated into a Servlet.
+2.	Compilation Phase: 	The Servlet is compiled into bytecode.
+3.	Loading Phase: The 	Servlet class is loaded into memory.
+4.	Instantiation Phase: 	An instance of the Servlet is created.
+5.	Initialization Phase: 	The init() method is called.
+6.	Service Phase: 	The _jspService() method is called to handle client requests.
+7.	Destruction Phase: 	The destroy() method is called before the Servlet is garbage collected.
+
+JSP Lifecycle
+The lifecycle of a JSP page includes several phases: Translation, Compilation, Loading, Instantiation, Initialization, Request Handling, and Destruction. Each phase is essential for processing JSP pages on the server side. Let's go through each phase in detail:
+1.	Translation Phase
+o	In this phase, the JSP engine (part of the web server) translates the JSP page into a servlet. This process converts the JSP page into a Java servlet source file.
+o	The translation process involves parsing the JSP page and converting JSP elements (such as directives, scriptlets, and expressions) into corresponding Java code.
+
+
+2.	Compilation Phase
+o	After translation, the servlet source file is compiled by the Java compiler into bytecode, resulting in a servlet class file.
+o	If there are any syntax errors in the JSP page, they are reported during this phase.
+
+
+
+
+
+3.	Loading Phase
+o	Once compiled, the servlet class file is loaded into the JVM (Java Virtual Machine) by the class loader.
+4.	Instantiation Phase
+o	The servlet class is instantiated to create an instance of the servlet. This instance will handle client requests for the JSP page.
+5.	Initialization Phase
+o	The init() method of the servlet is called by the container to initialize the servlet instance.
+o	This method is called only once during the lifecycle of the servlet, and it is used to perform any initialization tasks, such as establishing database connections or reading configuration parameters.
+
+
+6.	Request Handling Phase
+o	For each client request, the container invokes the service() method of the servlet. This method processes the request and generates a response.
+o	The service() method calls either the doGet() or doPost() method, depending on the HTTP request method (GET or POST).
+o	The JSP equivalent methods are _jspService(HttpServletRequest request, HttpServletResponse response), which are generated during the translation phase and contain the logic of the JSP page.
+o	The servlet processes the request, executes any embedded Java code, and generates dynamic content. The generated content (typically HTML) is then sent back to the client as the response.
+
+
+
+
+
+7.	Destruction Phase
+o	When the servlet is no longer needed, the container calls the destroy() method of the servlet.
+o	This method is used to perform any cleanup operations, such as closing database connections or releasing resources.
+o	The destroy() method is called only once during the lifecycle of the servlet, before the servlet instance is garbage collected.
+
+
+3. JSP Syntax and Elements
+•	Directives: Provide global information about an entire JSP page.
+o	Page Directive: Defines page-dependent attributes, like scripting language, error page, etc.
+<%@ page language="java" contentType="text/html" %>
+
+IMPORTANT
+--------------------------------------------------------------------------------------------------------------------------------------
+Taglib Directive: Declares a tag library, containing custom actions used in the page
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+Scriptlets: Embeds Java code into the JSP.
+<% 
+  int count = 0; 
+  count++;
+%>
+
+
+
+Expressions: Outputs the value of a Java expression directly to the client.
+<%= new java.util.Date() %>
+
+Declarations: Declares one or more variables or methods that can be used later in the JSP.
+<%! 
+  private int count = 0; 
+  public int getCount() { return count; }
+%>
+
+
+Comments:
+•	HTML Comments: <!-- This is an HTML comment -->
+•	JSP Comments: <%-- This is a JSP comment --%>
+4. JSP Implicit Objects
+•	request: HttpServletRequest object.
+•	response: HttpServletResponse object.
+•	out: JspWriter object used to send output to the client.
+•	session: HttpSession object.
+•	application: ServletContext object.
+•	config: ServletConfig object.
+•	pageContext: PageContext object.
+•	Page: The servlet instance (i.e., this).
+•	Exception: Exception object used in error pages.
+
+
+
+5. JSP Standard Tag Library (JSTL)
+•	Core Tags: Provides core functionalities such as iteration, conditionals, etc.
+<c:forEach var="item" items="${itemList}">
+  ${item.name}
+</c:forEach>
+
+
+
+6. JSP Best Practices
+•	Separation of Concerns: Use JSP for presentation logic and Servlets for business logic.
+•	Proper Resource Management: Close resources like database connections.
+•	Use MVC Architecture: Follow the Model-View-Controller pattern for better maintenance.
+
+
+7. Warning: -
+•	Avoid Java Code in JSP: Use JSTL and custom tags instead of scriptlets.
+
+
 
 
 
